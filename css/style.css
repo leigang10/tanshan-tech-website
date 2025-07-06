@@ -132,14 +132,16 @@ main {
 
 /* ===== 英雄区域样式 ===== */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 80vh;
+    min-height: 75vh !important;
+    height: 75vh !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    opacity: 1 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 100px 0;
-    /* 默认无背景图，移动端优先 */
+    padding: 0;
 }
 
 .hero-content {
@@ -150,13 +152,13 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #222; /* 英雄区字体颜色为黑色 */
+    color: #fff;
 }
 
 .hero-title,
 .hero-subtitle,
 .hero-description {
-    color: #222 !important;
+    color: #fff !important;
 }
 
 .hero-title {
@@ -985,7 +987,7 @@ main {
 
 @media (min-width: 769px) {
     .hero {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), url('../images/hero-bg.jpg') center center/cover no-repeat;
+        background: url('/images/hero-bg.jpg') center center/cover no-repeat !important;
     }
 }
 
